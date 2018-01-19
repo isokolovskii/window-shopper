@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C261F27920122727008F9426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261F27820122727008F9426 /* AppDelegate.swift */; };
-		C261F27B20122727008F9426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261F27A20122727008F9426 /* ViewController.swift */; };
 		C261F27E20122727008F9426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C261F27C20122727008F9426 /* Main.storyboard */; };
 		C261F28020122727008F9426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C261F27F20122727008F9426 /* Assets.xcassets */; };
 		C261F28320122727008F9426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C261F28120122727008F9426 /* LaunchScreen.storyboard */; };
+		C261F28D20122971008F9426 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261F28C20122971008F9426 /* CurrencyTextField.swift */; };
+		C2936EBF20123223001F4507 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2936EBE20123223001F4507 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C261F27520122727008F9426 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C261F27820122727008F9426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C261F27A20122727008F9426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C261F27D20122727008F9426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C261F27F20122727008F9426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C261F28220122727008F9426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C261F28420122727008F9426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C261F28C20122971008F9426 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		C2936EBE20123223001F4507 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		C261F27720122727008F9426 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				C261F28B20122947008F9426 /* Views */,
+				C261F28A201227E2008F9426 /* Controllers */,
 				C261F27820122727008F9426 /* AppDelegate.swift */,
-				C261F27A20122727008F9426 /* ViewController.swift */,
 				C261F27C20122727008F9426 /* Main.storyboard */,
 				C261F27F20122727008F9426 /* Assets.xcassets */,
 				C261F28120122727008F9426 /* LaunchScreen.storyboard */,
 				C261F28420122727008F9426 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		C261F28A201227E2008F9426 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2936EBE20123223001F4507 /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C261F28B20122947008F9426 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C261F28C20122971008F9426 /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C261F27B20122727008F9426 /* ViewController.swift in Sources */,
+				C261F28D20122971008F9426 /* CurrencyTextField.swift in Sources */,
+				C2936EBF20123223001F4507 /* MainVC.swift in Sources */,
 				C261F27920122727008F9426 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isokol.dev.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isokol.dev.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
